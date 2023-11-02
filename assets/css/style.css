@@ -92,6 +92,13 @@ header img {
 
 .griglia {
   padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.griglia > * {
+  flex: 1;
+  width: calc(100% / 4);
+  box-sizing: border-box;
 }
 .griglia img {
   border: none;

@@ -35,8 +35,9 @@ header {
 
 .griglia {
     padding: $big;
+    @include grid(4);
     img {
-        border: none;                
+        border: none;
     }
 }
 

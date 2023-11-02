@@ -14,3 +14,15 @@ $border-radius: (
  box-shadow: $x $y $z $color;   
 }
 $border: 2px solid black;
+
+
+@mixin grid($elements-per-line) {
+    display: flex;
+    flex-wrap: wrap;
+    
+    & > * {
+      flex: 1;
+      width: calc(100% / #{$elements-per-line});
+      box-sizing: border-box;
+    }
+  }
