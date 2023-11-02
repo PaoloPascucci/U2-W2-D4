@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "./partials/buttons";
+@import "./partials/spacing";
+@import "./partials/floating";
+
+$bg_hero: #640fc5;
+$text: #f4f4f4;
+
+$font: Arial, Helvetica, sans-serif;
+
+$small: 12px;
+$medium: 16px;
+$big: 24px;
+
+@mixin title-big($fs) {
+    font-size: $fs;
+}
+
+h1 {
+    @include title-big($medium);
+}
+
+header {
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.griglia {
+    padding: $big;
+    img {
+        border: none;        
+        box-shadow: 0 0 15px black;
+    }
+}
+
+.hero {
+    margin-block: $big;
+    img.col-6 {
+        height: 300px;
+        width: 300px;
+        padding: 0;
+    }
+}
+button {
+    border: none;
+}
+
+.box-shadow {
+    @include box-shadow(5px, 5px, 15px, black);
+}

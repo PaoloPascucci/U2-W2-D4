@@ -1,0 +1,16 @@
+$border-radius: (
+    sm: 4px,
+    md: 8px,
+    lg: 20px,
+    round: 9999px
+);
+
+@each $key, $value in $border-radius {
+    .br-#{$key} {
+        border-radius: $value;
+    }
+}
+@mixin box-shadow($x, $y, $z, $color) {
+ box-shadow: $x $y $z $color;   
+}
+$border: 2px solid black;

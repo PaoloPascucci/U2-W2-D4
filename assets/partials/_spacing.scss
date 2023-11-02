@@ -1,0 +1,20 @@
+$sizes: (
+    xs: 10px,
+    sm: 20px,
+    md: 30px,
+    lg: 50px,
+    xl: 100px,
+    xxl: 200px
+);
+
+@each $key, $value in $sizes {
+    .m-#{$key} {
+        margin: $value;
+    }
+}
+
+@each $key, $value in $sizes {
+    .p-#{$key} {
+        padding: $value;
+    }
+}
